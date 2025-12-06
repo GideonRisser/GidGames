@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(3, 3, 80);
+}
+
+h1 {
+    color: rgb(231, 7, 7);
+}
+h2 {
+    color: rgb(231, 7, 7);
+}
+
+p {
+    color: yellowgreen;
+}
+
+li {
+    color: orange;
+}
+
+a {
+    color: orange;
+}
