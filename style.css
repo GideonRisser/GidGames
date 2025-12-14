@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(250,234,190);
+}
+
+body,html{
+    margin: 0;
+    padding: 20;
+    box-sizing: border-box;
+}
+
+#Head {
+    background-color : rgb(57,7,5);
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: rgb(231, 7, 7);
+}
+h2 {
+    color: rgb(57,7,5);
+    margin-left: 10px;
+}
+
+#Title{
+    color: rgb(250,234,190);
+    font-family: fantasy;
+    font-size: 200%;
+    font-weight: lighter;
+}
+
+p {
+    color: rgb(57,7,5);
+    margin-left: 15px;
+}
+
+li, a {
+    color: rgb(57,7,5);
+    margin-left: 5px;
+}
