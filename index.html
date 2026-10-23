@@ -3,34 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="assets/style.css" type="text/css">
   <title>GidGames</title>
-  <link rel="icon" type="image/png" href="favicon.png">
+  <script>
+    // Icon
+    (function() {
+      const today = new Date();
+      const month = today.getMonth() + 1; // JS months are 0-11, so we add 1
+      const day = today.getDate();
+
+      const iconLink = document.createElement("link");
+      iconLink.rel = "icon";
+      iconLink.type = "image/png";
+
+      // Christmas
+      if (month === 12 && day >= 1 && day <= 31 && day != 6) {
+        iconLink.href = "assets/themes/christmas.png";
+      } 
+      // GidGames Day
+      else if (month === 12 && day === 6) {
+        iconLink.href = "assets/themes/throwback.png";
+      } 
+      // Basic catch-all
+      else {
+        iconLink.href = "assets/favicon.png";
+      }
+
+      // Inject it into the head immediately
+      document.head.appendChild(iconLink);
+    })();
+
+    // Theme
+    (function() {
+      const today = new Date();
+      const month = today.getMonth() + 1; // JS months are 0-11, so we add 1
+      const day = today.getDate();
+
+      // Create the link element for the dynamic stylesheet
+      const themeLink = document.createElement("link");
+      themeLink.rel = "stylesheet";
+      themeLink.type = "text/css";
+
+      // Christmas
+      if (month === 12 && day >= 1 && day <= 31 && day != 6) {
+        themeLink.href = "assets/themes/christmas.css";
+      } 
+      // GidGames Day
+      else if (month === 12 && day === 6) {
+        themeLink.href = "assets/themes/throwback.css";
+      } 
+      // Basic catch-all
+      else {
+        themeLink.href = "assets/themes/basic.css";
+      }
+
+      // Inject it into the head immediately
+      document.head.appendChild(themeLink);
+    })();
+  </script>
 </head>
 
 <body>
+  <!--Header-->
   <div id="Head">
-    <img src="favicon.png" width="80" height="80">
+    <script>
+      // Icon
+      (function() {
+        const parentDiv = document.getElementById("Head");
+        const today = new Date();
+        const month = today.getMonth() + 1; // JS months are 0-11, so we add 1
+        const day = today.getDate();
+
+        const iconLink = document.createElement("img");
+        iconLink.width = "80";
+        iconLink.height = "80";
+
+        // Christmas
+        if (month === 12 && day >= 1 && day <= 31 && day != 6) {
+          iconLink.src = "assets/themes/christmas.png";
+        } 
+        // GidGames Day
+        else if (month === 12 && day === 6) {
+          iconLink.src = "assets/themes/throwback.png";
+        }
+        // Basic catch-all
+        else {
+          iconLink.src = "assets/favicon.png";
+        }
+
+        // Inject it into the head immediately
+        parentDiv.appendChild(iconLink);
+      })();
+    </script>
     <h1 id="Title">GidGames</h1>
   </div>
-  <p>
-    Free original games online.
-  </p>
-  <h2>Games</h2>
-  <ul>
-    <li><a href="tag.html">Tag</a></li>
-    <li><a href="pong.html">Pong</a></li>
-    <li><a href='sunday_drive.html'>Sunday Drive</a></li>
-  </ul>
-  <h2>Community</h2>
-  <ul>
-    <li><a href="https://youtube.com/@gidgames-net?si=5AVoFnNzD4v49uyb">Subscribe on YouTube</a></li>
-    <li><a href="https://discord.gg/psJz5mnY96">Join the Discord</a></li>
-  </ul>
-  <h2>Shop</h2>
-  <ul>
-    <li><a href="https://gidgames.printify.me">Buy Merchandise</a></li>
-  </ul>
-  <script src="script.js"></script>
+
+
+  <!--Cards-->
+  <div class="card-container">
+
+            <div class="card">
+                <div class="card-image"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Games</h3>
+                    <p class="card-text">Play featured games on GidGames.net</p>
+                    <ul>
+                      <li><a href="games/tag" class="card-btn">Tag</a></li>
+                      <li><a href="games/pong" class="card-btn">Pong</a></li>
+                      <li><a href="games/sundaydrive" class="card-btn">Sunday Drive</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Follow GidGames</h3>
+                    <p class="card-text">Follow GidGames on Social Media and stay updated on what is to come.</p>
+                    <ul>
+                      <li><a href="https://youtube.com/@gidgames-net?si=5AVoFnNzD4v49uyb" class="card-btn">Subscribe on YouTube</a></li>
+                      <li><a href="https://discord.gg/psJz5mnY96" class="card-btn">Join the Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Buy Merch</h3>
+                    <p class="card-text">Dress stylish and support GidGames by buying my Merch!</p>
+                    <a href="https://gidgames.printify.me" class="card-btn">Visit store here</a>
+                </div>
+            </div>
+
+  </div>
+
 </body>
 </html>

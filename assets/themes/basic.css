@@ -1,0 +1,31 @@
+body {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background: linear-gradient(170deg, rgb(13, 115, 252), rgb(42, 31, 192));
+}
+
+#Head {
+    background: linear-gradient(170deg, rgb(255,255,255), rgb(157, 148, 148));
+    box-shadow: 0 4px 8px rgba(0,0,0,0.516);
+}
+
+#Title{
+    color: rgb(12, 114, 251);
+    font-weight: lighter;
+}
+
+
+/* card styling */
+.card-container {
+    background-color: rgba(0,0,0,0);
+    font-family: sans-serif;
+}
+
+.card {
+    background: linear-gradient(170deg, rgb(255,255,255), rgb(157, 148, 148));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.516);
+}
+
+.card-text {
+    color: rgb(67, 66, 66);
+}
