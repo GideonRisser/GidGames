@@ -18,15 +18,19 @@
 
       // Christmas
       if (month === 12 && day >= 1 && day <= 31 && day != 6) {
-        iconLink.href = "assets/themes/christmas.png";
+        iconLink.href = "assets/themes/christmas/christmas.png";
       } 
+      // Thanksgiving
+      if (month === 11 && day >= 25 && day <= 27) {
+        iconLink.href = "assets/themes/thanksgiving/tab_icon.png"
+      }
       // GidGames Day
       else if (month === 12 && day === 6) {
-        iconLink.href = "assets/themes/throwback.png";
+        iconLink.href = "assets/themes/throwback/throwback.png";
       } 
       // Basic catch-all
       else {
-        iconLink.href = "assets/favicon.png";
+        iconLink.href = "assets/themes/basic/favicon.png";
       }
 
       // Inject it into the head immediately
@@ -46,15 +50,19 @@
 
       // Christmas
       if (month === 12 && day >= 1 && day <= 31 && day != 6) {
-        themeLink.href = "assets/themes/christmas.css";
+        themeLink.href = "assets/themes/christmas/christmas.css";
       } 
+      // Thanksgiving
+      if (month === 11 && day >= 25 && day <= 27) {
+        themeLink.href = "assets/themes/thanksgiving/thanksgiving.css"
+      }
       // GidGames Day
       else if (month === 12 && day === 6) {
-        themeLink.href = "assets/themes/throwback.css";
+        themeLink.href = "assets/themes/throwback/throwback.css";
       } 
       // Basic catch-all
       else {
-        themeLink.href = "assets/themes/basic.css";
+        themeLink.href = "assets/themes/basic/basic.css";
       }
 
       // Inject it into the head immediately
@@ -80,15 +88,19 @@
 
         // Christmas
         if (month === 12 && day >= 1 && day <= 31 && day != 6) {
-          iconLink.src = "assets/themes/christmas.png";
+          iconLink.src = "assets/themes/christmas/christmas.png";
         } 
+        // Thanksgiving
+        if (month === 11 && day >= 25 && day <= 27) {
+          iconLink.src = "assets/themes/thanksgiving/page_icon.png"
+        }
         // GidGames Day
         else if (month === 12 && day === 6) {
-          iconLink.src = "assets/themes/throwback.png";
+          iconLink.src = "assets/themes/throwback/throwback.png";
         }
         // Basic catch-all
         else {
-          iconLink.src = "assets/favicon.png";
+          iconLink.src = "assets/themes/basic/favicon.png";
         }
 
         // Inject it into the head immediately
